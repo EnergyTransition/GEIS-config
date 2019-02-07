@@ -1,0 +1,65 @@
+{
+  "kpis": [
+    {
+      "LegendName": "Wind", 
+      "LegendType": "asset",
+      "AssetType": "esdl.WindTurbine",
+      "LegendValue": "power",
+      "LegendUnit": "kW"
+    },
+    {
+      "LegendName": "PV", 
+      "LegendType": "asset",
+      "AssetType": "esdl.PVPanel",
+      "LegendValue": "power",
+      "LegendUnit": "kW"
+    },
+    {
+      "LegendName": "Energiecentrales",
+      "LegendType": "asset",
+      "AssetType": "esdl.PowerPlant",
+      "LegendValue": "power",
+      "LegendUnit": "kW"
+    },
+    {
+      "LegendName": "Restwarmte Potentie",
+      "LegendType": "asset",
+      "AssetType": "esdl.ResidualHeatSourcePotential",
+      "LegendValue": "value",
+      "LegendUnit": "GJ"
+    },
+    {
+      "LegendName": "Electriciteit Vraag",
+      "LegendType": "asset",
+      "AssetType": "esdl.ElectricityDemand",
+      "LegendValue": "port.profile.value",
+      "LegendUnit": "GJ"
+    },
+    {
+      "LegendName": "Gas Vraag",
+      "LegendType": "asset",
+      "AssetType": "esdl.GasDemand",
+      "LegendValue": "port.profile.value",
+      "LegendUnit": "GJ"
+    }
+  ],
+
+  "servicesList": [    
+    {      
+      "serviceName": "Rest Energie",
+      "serviceURL": "http://10.30.2.1:6002/api/restenergy/getes",
+      "servicePort": 6002,
+      "servicePath": "/api",
+      "kpis": [
+        {
+          "LegendName": "Rest Energie",
+          "LegendType": "kpi",
+          "LegendUnit": "MJ",
+          "AssetType": "esdl.KPI",
+          "KpiType": "REST Energy in TJ",
+          "LegendValue": "value"
+        }
+      ]
+    }
+  ]
+}
