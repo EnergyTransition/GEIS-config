@@ -33,14 +33,14 @@
       "LegendType": "asset",
       "AssetType": "esdl.ElectricityDemand",
       "LegendValue": "port.profile.value",
-      "LegendUnit": "GJ"
+      "LegendUnit": "kWh"
     },
     {
       "LegendName": "Gas Vraag",
       "LegendType": "asset",
       "AssetType": "esdl.GasDemand",
       "LegendValue": "port.profile.value",
-      "LegendUnit": "GJ"
+      "LegendUnit": "m3"
     }
   ],
 
